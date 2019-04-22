@@ -7,4 +7,7 @@ Na Pasta Model/Util tem a Funcao que converte Json para  SQL
 
 Na pasta Client um Projeto para Testar o servidor.
 
+O Server trata as requiscoes http pelo verbo (GET, POST, PUT, DELETE)
+
+o Json enviado deve ser Encodado para o correto funcionamento do Servidor
 
