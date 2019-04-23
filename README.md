@@ -9,9 +9,24 @@ Na pasta Client um Projeto para Testar o servidor.
 
 O Server trata as requiscoes http pelo verbo (GET, POST, PUT, DELETE)
 
-Use o RestDebugger da IDE do Delphi, ou Postman... etc...
+Use o RestDebugger da IDE do Delphi, ou Postman... etc... para testar o Server RDW
 
-O Server recebe o Json decoda e depois converte em uma string SQL de Insert o Update baseado nos dados do Json
+O Server recebe o Json decoda e depois converte em uma string SQL de Insert o Update baseado nos dados do Json para ser tratada pelo
+
+Observar as linhas qo evendo conforme o fontes.
+
+# procedure TDmServer.DWServerEvents1EventsempresaReplyEventByType(var Params: TDWParams;
+# var Result: string; const RequestType: TRequestType; var StatusCode: Integer;
+  RequestHeader: TStringList);
+begin
+  case RequestType of
+    rtGet   : GETEmpresa( Params.ItemsString['empid'].AsInteger ,Result );
+    rtPost  : POSTEmpresa( Params.ItemsString['empjson'].AsString ,Result ) ;
+    rtPut   : PUTEmpresa( Params.ItemsString['empid'].AsInteger,  Params.ItemsString['empjson'].AsString ,Result ) ;
+    rtDelete: DELEmpresa(Params.ItemsString['empid'].AsInteger ,Result) ;
+    rtPatch : ;
+  end;
+end;
 
 o Json enviado deve ser Encodado para o correto funcionamento do Servidor
 -------------------------------------------------
