@@ -122,13 +122,8 @@ begin
 end;
 
 procedure TDmServer.PUTEmpresa( IdValue: Integer; Value: string; var Result: string);
-var jsontext: string; sr: TStringReader; jtr: TJsonTextReader; s: string;
-    lj     : string;
-    campos : string;
-    valores: string;
+var
     vSql   : string;
-    vData  : string;
-    vEmpId : string;
 begin
   if Value = EmptyStr  then
   begin
