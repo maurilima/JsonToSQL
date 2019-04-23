@@ -9,7 +9,7 @@ Na pasta Client um Projeto para Testar a função JsonToSql.
 
 O Server trata as requiscoes http pelo verbo (GET, POST, PUT, DELETE)
 
-Use o RestDebugger da IDE do Delphi, ou Postman... etc... para testar o Server RDW
+#Use o RestDebugger da IDE do Delphi, ou Postman... etc... para testar o Server RDW
 
 O Server recebe o Json decoda e depois converte em uma string SQL de Insert o Update baseado nos dados do Json para ser tratada pelo
 
