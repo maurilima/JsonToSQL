@@ -14,7 +14,7 @@ O Server trata as requiscoes http pelo verbo (GET, POST, PUT, DELETE)
 O Server recebe o Json decoda e depois converte em uma string SQL de Insert o Update baseado nos dados do Json para ser tratada pelo
 
 Observar as linhas do event conforme o fontes. DWServerEvents1EventsempresaReplyEventByType
-linhas 44 a 55. 
+linhas 44 a 55. Nesta linha são tratados os VERBOS HTTP enviados. 
 
 
 o Json enviado deve ser Encodado para o correto funcionamento do Servidor
