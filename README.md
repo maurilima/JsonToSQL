@@ -36,13 +36,15 @@ Voce deve Usar os Verbos HTPP na Requisicao:
 GET 
 exemplo:
 localhost:8082/api/v1/empresa
+
 . Retorna Lista de Empresas
+
 localhost:8082/api/v1/empresa?empid=1
+
 . Reorna empresa com id = 1
 
-Usando Metodo 
----------------------------------------------------------------
-POST
+Usando Metodo POST
+------
 Json de Insere dados para Tabela Empresa
 Json encodado em base64
 
@@ -51,14 +53,14 @@ localhost:8082/api/v1/empresa?empjson=%5B%7B%22EMPNOME%22%3A+%22Minha+Primeira+E
 . Insere Dados NO BD
 
 
-Metodo : PUT
+# Metodo : PUT
 
 localhost:8082/api/v1/empresa?empid=1'&empjson=%5B%7B%22EMPNOME%22%3A+%22Minha+Primeira+Empresa+por+Json%22%2C+%22EMPCNPJ%22%3A+%22560322323232323%22%2C+%22EMPCEP%22%3A+%22null%22%2C+%22EMPENDERECO%22%3A+%22null%22%2C+%22EMPNUMERO%22%3A+%22null%22%2C+%22EMPCIDADE%22%3A+%22null%22%2C+%22EMPBAIRRO%22%3A+%22null%22%2C+%22EMPUF%22%3A+%22RR%22%2C+%22EMPFONES%22%3A+%22null%22%2C+%22EMPCONTATO%22%3A+%22null%22%2C+%22EMPEMAIL%22%3A+%22null%22%2C+%22EMPINSCRICAOESTADUAL%22%3A+%22null%22%2C+%22EMPSITE%22%3A+%22null%22+%7D%5D%0D%0A
 
 para ser usado para atualizar dados no Banco Conforme o Exemplo
 
 
-Metodo :DELETE
+# Metodo :DELETE
 
 localhost:8082/api/v1/empresa?empid=1'
 
