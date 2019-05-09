@@ -21,7 +21,11 @@ linhas 44 a 55. Nesta linha são tratados os VERBOS HTTP enviados.
 
 
 o Json enviado deve ser Encodado para o correto funcionamento do Servidor
-Este JSON e UTILIZADO NOS EXEMPLOS APOS CODIFICAR EM BASE64
+
+Este JSON Abaixoo Foi UTILIZADO NOS EXEMPLOS APOS CODIFICAR EM BASE64
+
+
+
 [{"EMPNOME": "Minha Primeira Empresa por Json", "EMPCNPJ": "560322323232323", "EMPCEP": "null", "EMPENDERECO": "null", "EMPNUMERO": "null", "EMPCIDADE": "null", "EMPBAIRRO": "null", "EMPUF": "RR", "EMPFONES": "null", "EMPCONTATO": "null", "EMPEMAIL": "null", "EMPINSCRICAOESTADUAL": "null", "EMPSITE": "null" }]
 
 -------------------------------------------------
