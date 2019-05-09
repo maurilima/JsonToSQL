@@ -32,9 +32,9 @@ Este JSON Abaixoo Foi UTILIZADO NOS EXEMPLOS APOS CODIFICAR EM BASE64
 # Exemplo de Uso usando Url encodada
 ---------------------------------------
 
-Voce deve Usar os Verbos HTPP na Requisicao:
-GET 
-exemplo:
+
+# Metodo : GET 
+
 localhost:8082/api/v1/empresa
 
 . Retorna Lista de Empresas
@@ -43,7 +43,7 @@ localhost:8082/api/v1/empresa?empid=1
 
 . Reorna empresa com id = 1
 
-Usando Metodo POST
+Usando Metodo : POST
 ------
 Json de Insere dados para Tabela Empresa
 Json encodado em base64
