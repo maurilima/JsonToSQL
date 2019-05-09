@@ -9,9 +9,12 @@ Na pasta Client um Projeto para Testar a função JsonToSql.
 
 O Server trata as requiscoes http pelo verbo (GET, POST, PUT, DELETE)
 
-# Use o RestDebugger da IDE do Delphi, ou Postman... etc... para testar o Server RDW
+# Use o RestDebugger da IDE do Delphi, ou Postman ou outro para testar o Server RDW
+- Voce pode Usar o Browse mas sera executado somente o Metodo GET por default do Browser
 
 O Server recebe o Json decoda e depois converte em uma string SQL de Insert o Update baseado nos dados do Json para ser tratada pelo
+
+- o RW Server USA ReplyEventByType para identificar os Verbos de Chamada
 
 Observar as linhas do event conforme o fontes. DWServerEvents1EventsempresaReplyEventByType
 linhas 44 a 55. Nesta linha são tratados os VERBOS HTTP enviados. 
@@ -54,3 +57,5 @@ para ser usado para atualizar dados no Banco Conforme o Exemplo
 Metodo :DELETE
 
 localhost:8082/api/v1/empresa?empid=1'
+
+Deleta empresa com ID =1
