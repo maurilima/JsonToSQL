@@ -44,7 +44,8 @@ localhost:8082/api/v1/empresa?empid=1
 
 . Reorna empresa com id = 1
 
-.[{"EMPNOME": "Minha Primeira Empresa por Json", "EMPCNPJ": "560322323232323", "EMPCEP": "null", "EMPENDERECO": "null", "EMPNUMERO": "null", "EMPCIDADE": "null", "EMPBAIRRO": "null", "EMPUF": "RR", "EMPFONES": "null", "EMPCONTATO": "null", "EMPEMAIL": "null", "EMPINSCRICAOESTADUAL": "null", "EMPSITE": "null" }]
+# Retorno: 
+[{"EMPNOME": "Minha Primeira Empresa por Json", "EMPCNPJ": "560322323232323", "EMPCEP": "null", "EMPENDERECO": "null", "EMPNUMERO": "null", "EMPCIDADE": "null", "EMPBAIRRO": "null", "EMPUF": "RR", "EMPFONES": "null", "EMPCONTATO": "null", "EMPEMAIL": "null", "EMPINSCRICAOESTADUAL": "null", "EMPSITE": "null" }]
 
 
 Usando Metodo : POST
